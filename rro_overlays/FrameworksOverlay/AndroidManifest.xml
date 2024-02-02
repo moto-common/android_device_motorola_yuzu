@@ -17,7 +17,7 @@
 */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.cofud">
+    package="com.android.yuzu">
 
     <overlay
         android:isStatic="true"

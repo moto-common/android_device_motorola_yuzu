@@ -13,17 +13,17 @@
 # limitations under the License.
 
 # Platform
-PRODUCT_PLATFORM := mt6768
-include device/motorola/mt6768-common/PlatformConfig.mk
+PRODUCT_PLATFORM := mt6833
+include device/motorola/mt6833-common/PlatformConfig.mk
 
 # Bootloader Name
-TARGET_BOOTLOADER_BOARD_NAME := cofud
+TARGET_BOOTLOADER_BOARD_NAME := austin
 
 # Partition Information
-BOARD_SUPER_PARTITION_SIZE := 11811160064
+BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
 BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
-BOARD_MOT_DYNAMIC_PARTITIONS_SIZE := 5901385728
+BOARD_MOT_DYNAMIC_PARTITIONS_SIZE := 4559208448
 
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true

@@ -1,4 +1,4 @@
-# Android device tree for motorola moto g31(w) (cofud)
+# Android device tree for motorola moto g31(w) (yuzu)
 
 ```
 # Copyright 2014 The Android Open Source Project

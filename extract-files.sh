@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=cofud
+DEVICE=yuzu
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
@@ -57,6 +57,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
             ;;
     esac
 }

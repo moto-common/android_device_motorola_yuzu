@@ -13,19 +13,16 @@
 # limitations under the License.
 
 # Device path
-DEVICE_PATH := device/motorola/cofud/rootdir
+DEVICE_PATH := device/motorola/yuzu/rootdir
 
 # Density
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 280
 
 # Model
-PRODUCT_MODEL := moto g(31)
-
-# NFC
-TARGET_USES_ST_NFC := true
+PRODUCT_MODEL := moto g 5g (2022)
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/mt6768-common/platform.mk)
+$(call inherit-product, device/motorola/mt6833-common/platform.mk)
 
 # include board vendor blobs
-$(call inherit-product, vendor/motorola/cofud/cofud-vendor.mk)
+$(call inherit-product, vendor/motorola/yuzu/yuzu-vendor.mk)

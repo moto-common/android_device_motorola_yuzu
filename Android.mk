@@ -14,6 +14,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),cofud)
+ifeq ($(TARGET_DEVICE),yuzu)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
